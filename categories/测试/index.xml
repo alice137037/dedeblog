@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>测试 on dede's Blog</title><link>https://blog.dededuud.cn/categories/%E6%B5%8B%E8%AF%95/</link><description>Recent content in 测试 on dede's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>dededuud</copyright><lastBuildDate>Fri, 19 May 2000 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.dededuud.cn/categories/%E6%B5%8B%E8%AF%95/index.xml" rel="self" type="application/rss+xml"/><item><title>测试2</title><link>https://blog.dededuud.cn/p/%E6%B5%8B%E8%AF%952/</link><pubDate>Fri, 19 May 2000 00:00:00 +0000</pubDate><guid>https://blog.dededuud.cn/p/%E6%B5%8B%E8%AF%952/</guid><description>&lt;img src="https://blog.dededuud.cn/f267ec9256a85fc8870eb4c3df91206.jpg" alt="Featured image of post 测试2" />&lt;p>&lt;img src="https://blog.dededuud.cn/f267ec9256a85fc8870eb4c3df91206.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;p>hihihissssssssssssssss&lt;/p>
+&lt;h3 id="引用案例">引用案例
+&lt;/h3>&lt;blockquote>
+&lt;p>三月，因久旱不雨，苏轼赴郿，祈雨于太白山之上清宫。数日后，虽有微雨，父老以为不足，于是，再陪宋太守亲往祭祷，回程路上，便见道中有云气自山中来，如群马奔突而至车座左右，苏轼一时好奇心起，开笼收云归家，作《攓云篇》。&lt;/p>&lt;/blockquote>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">// ~&lt;span class="se">\b&lt;/span>log&lt;span class="se">\a&lt;/span>ssets&lt;span class="se">\s&lt;/span>css&lt;span class="se">\c&lt;/span>ustom.scss
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">//------------------------------------------------
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">//将滚动条修改为圆角样式
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">//菜单滚动条美化
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">.menu::-webkit-scrollbar &lt;span class="o">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> display: none&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">// 全局滚动条美化
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">html &lt;span class="o">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ::-webkit-scrollbar &lt;span class="o">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> width: 20px&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ::-webkit-scrollbar-track &lt;span class="o">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> background-color: transparent&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ::-webkit-scrollbar-thumb &lt;span class="o">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> background-color: &lt;span class="c1">#d6dee1;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> border-radius: 20px&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> border: 6px solid transparent&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> background-clip: content-box&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ::-webkit-scrollbar-thumb:hover &lt;span class="o">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> background-color: &lt;span class="c1">#a8bbbf;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>

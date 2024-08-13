@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Obsidian on dede's Blog</title><link>https://dedeblog-file2.vercel.app/tags/obsidian/</link><description>Recent content in Obsidian on dede's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>dededuud</copyright><lastBuildDate>Fri, 02 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://dedeblog-file2.vercel.app/tags/obsidian/index.xml" rel="self" type="application/rss+xml"/><item><title>hugo+obsidian搭建个人博客记录1️⃣</title><link>https://dedeblog-file2.vercel.app/p/hugo-obsidian%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%951%EF%B8%8F%E2%83%A3/</link><pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate><guid>https://dedeblog-file2.vercel.app/p/hugo-obsidian%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%951%EF%B8%8F%E2%83%A3/</guid><description>&lt;img src="https://dedeblog-file2.vercel.app/b1fcd2f7-412b-4375-8dc3-e6314b3b4f62.jpeg" alt="Featured image of post hugo+obsidian搭建个人博客记录1️⃣" />&lt;h2 id="起步">起步
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Obsidian on dede's Blog</title><link>https://blog.dededuud.cn/tags/obsidian/</link><description>Recent content in Obsidian on dede's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>dededuud</copyright><lastBuildDate>Fri, 02 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.dededuud.cn/tags/obsidian/index.xml" rel="self" type="application/rss+xml"/><item><title>搭建个人博客记录1️⃣🎉🎉🎉hugo+obsidian</title><link>https://blog.dededuud.cn/p/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%951%EF%B8%8F%E2%83%A3hugo-obsidian/</link><pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate><guid>https://blog.dededuud.cn/p/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%951%EF%B8%8F%E2%83%A3hugo-obsidian/</guid><description>&lt;img src="https://blog.dededuud.cn/df4eee97ec03a2719dbd4de478e4aca.jpg" alt="Featured image of post 搭建个人博客记录1️⃣🎉🎉🎉hugo+obsidian" />&lt;p>&lt;img src="https://blog.dededuud.cn/df4eee97ec03a2719dbd4de478e4aca.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="起步">起步
 &lt;/h2>&lt;p>搭建博客在很早很早以前都写在便签备忘录里面，但是总是没有动手开始做，一次又一次搁浅直到上一周看到一篇设计师姐妹搭建作品集艺术向的博客，非常心动。于是就有这个&lt;code>dededuud'blog&lt;/code>啦！&lt;/p>
 &lt;p>【平台选择】&lt;/p>
 &lt;p>依旧延续自己举棋不定的风格，有“搭建博客”这个想法后第一步是全平台狂搜：搭建博客的平台选择；WordPress优缺点；Hugo优缺点；Hexo优缺点；相关主题的美观程度；友邻博客的浏览……&lt;/p>
@@ -8,7 +11,7 @@
 &lt;li>相对主题好看，不需要太冗杂，搭建后我这个懒蛋过了这个时期后其实不太会探索更多内容。&lt;/li>
 &lt;li>稳定，不想再重复搭建TAT&lt;/li>
 &lt;/ol>
-&lt;p>基于这几点，综合来看选择了&lt;code>hugo&lt;/code>。下面是自己的搭建过程，注意：没有详细的操作内容，可以点进去参考链接查看具体内容，大部分是个人向配置记录与报错解决。看起来我真的很多错误处理&lt;/p>
+&lt;p>基于这几点，综合来看选择了&lt;code>hugo&lt;/code>。下面是自己的搭建过程，没有详细的操作内容，可以点进去参考链接查看具体内容，大部分是个人向配置记录与报错解决。看起来我真的很多错误处理&lt;/p>
 &lt;h2 id="hugo搭建">hugo搭建
 &lt;/h2>&lt;p>主参考教程如下：&lt;/p>
 &lt;h3 id="参考链接">参考链接
@@ -127,6 +130,23 @@
 &lt;li>自动化上传github，使用deploy.sh 文件（通过 git bash），自动上传加载。&lt;/li>
 &lt;li>双击打开运行&lt;code>deploy.sh&lt;/code>即可自动推送文件到仓库,以后写完博客或修改博客后都需要运行一下&lt;code>deploy.sh&lt;/code>,才能部署到云&lt;/li>
 &lt;/ol>
+&lt;h3 id="域名解析">域名解析
+&lt;/h3>&lt;p>从7月底申请，到8月12号才正式通过域名备案。&lt;/p>
+&lt;h3 id="二级域名设置">二级域名设置
+&lt;/h3>&lt;p>尝试30min发现这么简单的事情却一直失败，原因是：我的二级域名 blog 输成了 bolg&lt;/p>
+&lt;p>memos&lt;/p>
+&lt;p>Photography&lt;/p>
+&lt;p>&lt;a class="link" href="https://blog.csdn.net/weixin_62392149/article/details/135114752" target="_blank" rel="noopener"
+>利用阿里云CDN加速vercel上的网站—2023最新可用-CSDN博客&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://zhuanlan.zhihu.com/p/621179830" target="_blank" rel="noopener"
+>zhuanlan.zhihu.com/p/621179830&lt;/a>&lt;/p>
+&lt;p>&lt;code>vercel Generating SSL Certificate&lt;/code> 配置后需要等待一下子，ssl证书生成后，就可以访问啦&lt;/p>
+&lt;p>Good news! Your DNS records are set up correctly, but it can take some time for them to propagate globally.&lt;/p>
+&lt;h3 id="ssl配置">SSL配置
+&lt;/h3>&lt;p>&lt;a class="link" href="http://www.360doc.com/content/24/0520/17/360939_1123836588.shtml" target="_blank" rel="noopener"
+>【一分钟】轻松搞定，SSL证书自动续签，解决阿里云SSL免费证书每3个月失效问题&lt;/a>
+&lt;a class="link" href="https://blog.csdn.net/weixin_43288858/article/details/118437535" target="_blank" rel="noopener"
+>阿里云申请域名及域名配置https_阿里云单域名配置一个ip多个端口怎么设置-CSDN博客&lt;/a>&lt;/p>
 &lt;h3 id="错误一览">错误一览
 &lt;/h3>&lt;h4 id="除了主页外其他页面的头像无法正常显示">除了主页外，其他页面的头像无法正常显示
 &lt;/h4>&lt;p>呜呜呜太感动了，太感动了，居然搜索到同款疑问了，真的困扰我很久。&lt;/p>
@@ -151,7 +171,7 @@
 >Hugo 博客写作最佳实践 | 胡说&lt;/a>&lt;/p>
 &lt;p>以上文章链接均是出自于一个作者的系列文章，整体看下来受益匪浅。
 目前自己obsidian的看板如下（还没有过多美化），按钮只有&lt;code>新建博客&lt;/code>一项，可以自动新建一篇固定模版的md文件到/content/post/路径下，可以根据勾选项draft，选择是否发布（超级爽）
-&lt;img src="https://dedeblog-file2.vercel.app/Pasted%20image%2020240802154512.png"
+&lt;img src="https://blog.dededuud.cn/Pasted%20image%2020240802154512.png"
 loading="lazy"
 >&lt;/p>
 &lt;h3 id="已有插件">已有插件
@@ -189,7 +209,7 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>注意一点：stack模版中！存储文章的地方是&lt;code>post&lt;/code>而不是&lt;code>posts&lt;/code>!!!有部分错误的原因来源于此。&lt;/p>
 &lt;h4 id="博客中一级与二级目录一致无区分">博客中一级与二级目录一致，无区分
 &lt;/h4>&lt;p>取消一级目录，文章直接从二级目录开始写起
-&lt;img src="https://dedeblog-file2.vercel.app/Pasted%20image%2020240802162214.png"
+&lt;img src="https://blog.dededuud.cn/Pasted%20image%2020240802162214.png"
 loading="lazy"
 >&lt;/p>
 &lt;h4 id="dateview识别不出来前缀">dateview识别不出来前缀
@@ -260,19 +280,4 @@ I am having the same issue, even though the vault opened is cloned from my repo.
 >Node.js安装及环境配置（超详细！保姆级！！）_nodejs安装及环境配置-CSDN博客&lt;/a>&lt;/p>
 &lt;p>发现是网络问题，配置镜像网站&lt;/p>
 &lt;h3 id="obsidian-picgo上传图床失败">obsidian picgo上传图床失败
-&lt;/h3>&lt;p>设置完图床点击 设为默认图床&lt;/p>
-&lt;h2 id="魔改ing">魔改ing
-&lt;/h2>&lt;p>.ico是 小小小小小的图标
-&lt;a class="link" href="https://blog.csdn.net/2201_75288929/article/details/132507563" target="_blank" rel="noopener"
->【Hugo】Stack主题的使用记录_hugo stack-CSDN博客&lt;/a> 讲的非常详细，从0到1的跨越，一些小细节也涉及到了。
-&lt;a class="link" href="https://blog.linsnow.cn/p/modify-hugo/" target="_blank" rel="noopener"
->（3）Stack主题的自定义&lt;/a> 圆角的可爱的&lt;/p>
-&lt;h3 id="参考链接-1">参考链接
-&lt;/h3>&lt;p>【学习向】
-&lt;a class="link" href="https://blog.gimo.me/posts/generating-cover-images-for-hugo-blog-posts/" target="_blank" rel="noopener"
->给 Hugo 博客文章自动生成分享图 | Yuanji&amp;rsquo;s Blog&lt;/a>&lt;/p>
-&lt;p>【欣赏向】
-简约美 &lt;a class="link" href="https://io-oi.me/life/" target="_blank" rel="noopener"
->Life | reuixiy&lt;/a>
-很有趣，小表情很多，mac小表情：&lt;a class="link" href="https://blog.linsnow.cn/" target="_blank" rel="noopener"
->L1nSn0w&amp;rsquo;s Blog&lt;/a>&lt;/p></description></item></channel></rss>
+&lt;/h3>&lt;p>设置完图床点击 设为默认图床&lt;/p></description></item></channel></rss>

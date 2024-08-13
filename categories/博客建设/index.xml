@@ -1,4 +1,272 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>博客建设 on dede's Blog</title><link>https://dedeblog-file2.vercel.app/categories/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE/</link><description>Recent content in 博客建设 on dede's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>dededuud</copyright><lastBuildDate>Fri, 02 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://dedeblog-file2.vercel.app/categories/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE/index.xml" rel="self" type="application/rss+xml"/><item><title>hugo+obsidian搭建个人博客记录1️⃣</title><link>https://dedeblog-file2.vercel.app/p/hugo-obsidian%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%951%EF%B8%8F%E2%83%A3/</link><pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate><guid>https://dedeblog-file2.vercel.app/p/hugo-obsidian%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%951%EF%B8%8F%E2%83%A3/</guid><description>&lt;img src="https://dedeblog-file2.vercel.app/b1fcd2f7-412b-4375-8dc3-e6314b3b4f62.jpeg" alt="Featured image of post hugo+obsidian搭建个人博客记录1️⃣" />&lt;h2 id="起步">起步
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>博客建设 on dede's Blog</title><link>https://blog.dededuud.cn/categories/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE/</link><description>Recent content in 博客建设 on dede's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>dededuud</copyright><lastBuildDate>Mon, 12 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.dededuud.cn/categories/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE/index.xml" rel="self" type="application/rss+xml"/><item><title>搭建个人博客记录2️⃣博客美化</title><link>https://blog.dededuud.cn/p/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%952%EF%B8%8F%E2%83%A3%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/</link><pubDate>Mon, 12 Aug 2024 00:00:00 +0000</pubDate><guid>https://blog.dededuud.cn/p/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%952%EF%B8%8F%E2%83%A3%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/</guid><description>&lt;img src="https://blog.dededuud.cn/Pasted%20image%2020240812145355.png" alt="Featured image of post 搭建个人博客记录2️⃣博客美化" />&lt;p>部分修改内容的时候，需要搜索stack主题下的内容。因为不同主题stack下面的文件是不同的。&lt;/p>
+&lt;h2 id="-240813">🌍 240813
+&lt;/h2>&lt;h3 id="照片集页面的搭建">照片集页面的搭建
+&lt;/h3>&lt;p>&lt;a class="link" href="https://themes.gohugo.io/themes/hugo-theme-gallery/" target="_blank" rel="noopener"
+>hugo-theme-gallery主题&lt;/a>&lt;/p>
+&lt;h3 id="缩小代码块字体">缩小代码块字体
+&lt;/h3>&lt;p>默认的代码字体在移动端显示有点大了。在&lt;code>assets/scss/partials/article.scss&lt;/code>内加上&lt;code>font-size&lt;/code>设定：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-scss" data-lang="scss">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">code&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">border-radius&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nf">var&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="n">tag-border-radius&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">font-size&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="mi">14&lt;/span>&lt;span class="kt">px&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="c1">// Add font size setting for code block
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="na">font-family&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nf">var&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="n">code-font-family&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="博客已经运行x天博客底部">博客已经运行X天（博客底部）
+&lt;/h3>&lt;p>位置：&lt;code>layouts/partials/footer/custom.html&lt;/code> 增加代码&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">&lt;span class="c">&amp;lt;!-- Add blog running time --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">script&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">let&lt;/span> &lt;span class="nx">s1&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s1">&amp;#39;2023-3-18&amp;#39;&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="c1">//website start date
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">s1&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="k">new&lt;/span> &lt;span class="nb">Date&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">s1&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">replace&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="sr">/-/g&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;/&amp;#34;&lt;/span>&lt;span class="p">));&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">let&lt;/span> &lt;span class="nx">s2&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="k">new&lt;/span> &lt;span class="nb">Date&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">let&lt;/span> &lt;span class="nx">timeDifference&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">s2&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">getTime&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="nx">s1&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">getTime&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">let&lt;/span> &lt;span class="nx">days&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">Math&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">floor&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">timeDifference&lt;/span> &lt;span class="o">/&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">1000&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="mi">60&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="mi">60&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="mi">24&lt;/span>&lt;span class="p">));&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">let&lt;/span> &lt;span class="nx">hours&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">Math&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">floor&lt;/span>&lt;span class="p">((&lt;/span>&lt;span class="nx">timeDifference&lt;/span> &lt;span class="o">%&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">1000&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="mi">60&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="mi">60&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="mi">24&lt;/span>&lt;span class="p">))&lt;/span> &lt;span class="o">/&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">1000&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="mi">60&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="mi">60&lt;/span>&lt;span class="p">));&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">let&lt;/span> &lt;span class="nx">minutes&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">Math&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">floor&lt;/span>&lt;span class="p">((&lt;/span>&lt;span class="nx">timeDifference&lt;/span> &lt;span class="o">%&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">1000&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="mi">60&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="mi">60&lt;/span>&lt;span class="p">))&lt;/span> &lt;span class="o">/&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">1000&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="mi">60&lt;/span>&lt;span class="p">));&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">let&lt;/span> &lt;span class="nx">result&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">days&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="s2">&amp;#34;天&amp;#34;&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="nx">hours&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="s2">&amp;#34;小时&amp;#34;&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="nx">minutes&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="s2">&amp;#34;分钟&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">document&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">getElementById&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;runningdays&amp;#39;&lt;/span>&lt;span class="p">).&lt;/span>&lt;span class="nx">innerHTML&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">result&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">script&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>尾部位置：&lt;code>layouts/partials/footer/footer.html&lt;/code>增加代码&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">&lt;span class="c">&amp;lt;!-- Add blog running time --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">section&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;running-time&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">本博客已稳定运行
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">span&lt;/span> &lt;span class="na">id&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;runningdays&amp;#34;&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;running-days&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&amp;lt;/&lt;/span>&lt;span class="nt">span&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">section&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>风格样式：&lt;code>assets/scss/partials/footer.scss&lt;/code>增加代码，与原有stack尾部信息的风格保持一致，没有个性化修改&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-scss" data-lang="scss">&lt;span class="line">&lt;span class="cl"> &lt;span class="nc">.running-time&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">font-size&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="mf">.2&lt;/span>&lt;span class="kt">rem&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">line-height&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="mf">.75&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">color&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nf">var&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="n">card-text-color-secondary&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">font-weight&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="ni">normal&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nc">.running-days&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">font-weight&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="ni">bold&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">color&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nf">var&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="n">emphasize-text-color&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">font-size&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="mf">.2&lt;/span>&lt;span class="kt">rem&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="总字数统计博客底部">总字数统计（博客底部）
+&lt;/h3>&lt;p>与上述内容类似配置，在参考别人的基础上，修改内容：篇数和k数加黑。&lt;/p>
+&lt;p>尾部位置：&lt;code>layouts/partials/footer/footer.html&lt;/code>增加代码&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl"> &lt;span class="c">&amp;lt;!--增加博客信息统计 --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">section&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;totalcount&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ $scratch := newScratch }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ range (where .Site.Pages &amp;#34;Kind&amp;#34; &amp;#34;page&amp;#34; )}}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ $scratch.Add &amp;#34;total&amp;#34; .WordCount }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ end }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 发表了&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">span&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;bold-text&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>{{ len (where .Site.RegularPages &amp;#34;Section&amp;#34; &amp;#34;post&amp;#34;) }}篇&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">span&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>文章 ·
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 总计&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">span&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;bold-text&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>{{ div ($scratch.Get &amp;#34;total&amp;#34;) 1000.0 | lang.FormatNumber 2 }}k&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">span&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>字
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">section&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>风格样式：&lt;code>assets/scss/partials/footer.scss&lt;/code>增加代码，与原有stack尾部信息的风格保持一致，没有个性化修改&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-scss" data-lang="scss">&lt;span class="line">&lt;span class="cl"> &lt;span class="nc">.totalcount&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">font-size&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="mf">.2&lt;/span>&lt;span class="kt">rem&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">line-height&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="mf">.75&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">color&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nf">var&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="n">card-text-color-secondary&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">font-weight&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="ni">normal&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nc">.bold-text&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">font-weight&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="ni">bold&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="总访问量统计">总访问量统计
+&lt;/h3>&lt;p>&lt;a class="link" href="https://busuanzi.ibruce.info/" target="_blank" rel="noopener"
+>不蒜子 - 极简网页计数器&lt;/a>
+&lt;a class="link" href="https://busuanzi.icodeq.com/" target="_blank" rel="noopener"
+>自建 不蒜子 API&lt;/a>
+&lt;a class="link" href="https://hyrtee.github.io/2023/start-blog/#%E5%AF%BC%E5%85%A5busuanzi-js%E8%84%9A%E6%9C%AC" target="_blank" rel="noopener"
+>hugo+Stack 搭建个人博客&lt;/a>&lt;/p>
+&lt;p>添加脚本：&lt;code>layouts\partials\head\head.html&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">script&lt;/span> &lt;span class="na">async&lt;/span> &lt;span class="na">src&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&amp;lt;/&lt;/span>&lt;span class="nt">script&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>底部显示本站总访问量和访客数，在&lt;code>layouts\partials\footer\footer.html&lt;/code>文件内添加以下内容：(因为想保持下面字体一致，所以直接添加在尾部，如果想和@字体一致，可以添加&lt;code>&amp;lt;section class=&amp;quot;copyright&amp;quot;&amp;gt;&lt;/code>)&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">div&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;busuanzi-footer&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">span&lt;/span> &lt;span class="na">id&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;busuanzi_container_site_pv&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 本站总访问量&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">span&lt;/span> &lt;span class="na">id&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;busuanzi_value_site_pv&amp;#34;&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;highlight-text&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>次&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">span&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">span&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">span&lt;/span> &lt;span class="na">id&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;busuanzi_container_site_uv&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 本站访客数&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">span&lt;/span> &lt;span class="na">id&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;busuanzi_value_site_uv&amp;#34;&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;highlight-text&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>人次&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">span&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">span&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>风格样式：&lt;code>assets/scss/partials/footer.scss&lt;/code>增加代码，与原有stack尾部信息的风格保持一致，没有个性化修改，加粗数字与单位。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-scss" data-lang="scss">&lt;span class="line">&lt;span class="cl"> &lt;span class="nc">.busuanzi-footer&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">font-size&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="mf">.2&lt;/span>&lt;span class="kt">rem&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">line-height&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="mf">.75&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">color&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nf">var&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="n">card-text-color-secondary&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">font-weight&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="ni">normal&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nc">.highlight-text&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">font-weight&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="ni">bold&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="在归档页增加标签">在归档页增加标签
+&lt;/h3>&lt;p>有点丑放弃了
+在layouts/_default/archives.html里的&lt;code>&amp;lt;/header&amp;gt;&lt;/code>后面加上如下code：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">{{- $taxonomy := $.Site.GetPage &amp;#34;taxonomyTerm&amp;#34; &amp;#34;tags&amp;#34; -}}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{- $terms := $taxonomy.Pages -}}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ if $terms }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">section&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;widget tagCloud&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">h2&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;section-title&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>{{ $taxonomy.Title }}&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">h2&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">div&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;tagCloud-tags&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ if ne (len $.Site.Taxonomies.tags) 0 }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ range $name, $taxonomy := $.Site.Taxonomies.tags }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ $tagCount := len $taxonomy.Pages }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">a&lt;/span> &lt;span class="na">href&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;{{ &amp;#34;&lt;/span>&lt;span class="err">/&lt;/span>&lt;span class="na">tags&lt;/span>&lt;span class="err">/&amp;#34;&lt;/span> &lt;span class="err">|&lt;/span> &lt;span class="na">relURL&lt;/span> &lt;span class="err">}}{{&lt;/span> &lt;span class="err">$&lt;/span>&lt;span class="na">name&lt;/span> &lt;span class="err">|&lt;/span> &lt;span class="na">urlize&lt;/span> &lt;span class="err">}}&amp;#34;&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;tagCloud-tags&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ $name }}&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">span&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;tagCloud-count&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>{{ $tagCount }}&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">span&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">a&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ end }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ end }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">section&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ end }}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>以上代码用了&lt;code>tagCloud-count&lt;/code>来修饰tag后面的数字，所以还需要在assets/scss/partials/widgets.scss里面加上如下代码，让数字变成浅灰：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-scss" data-lang="scss">&lt;span class="line">&lt;span class="cl">&lt;span class="nc">.tagCloud&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nc">.tagCloud-count&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">color&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nf">var&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="n">body-text-color&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="-240812">🌍 240812
+&lt;/h2>&lt;h3 id="相册功能">相册功能
+&lt;/h3>&lt;p>&lt;a class="link" href="https://www.sulvblog.cn/posts/blog/hugo_gallery/" target="_blank" rel="noopener"
+>Hugo博客添加相册功能 | Sulv&amp;rsquo;s Blog&lt;/a>&lt;/p>
+&lt;h3 id="导航栏图标的顺序更改">导航栏图标的顺序更改
+&lt;/h3>&lt;p>&lt;del>似乎图标排序方式，是按照identifier: github的英语首字母先后（存疑？&lt;/del>&lt;/p>
+&lt;p>顺序按照权重&lt;code>weight&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">menu&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">main&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">[]&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">social&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">identifier&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">rss&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">weight&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">1&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">RSS&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">url&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">/index.xml&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">params&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">newTab&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c">## 是否在新标签中打开&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">icon&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">rss2&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>同理修改导航栏下面的 主页，归档等等顺序，到&lt;code>content/page/&lt;/code>下对应index.zh-cn修改weight内容。&lt;/p>
+&lt;h3 id="暗色模式自定义图标仍为黑色">暗色模式自定义图标仍为黑色
+&lt;/h3>&lt;p>图标：去阿里矢量库，颜色#515151，大小24&lt;/p>
+&lt;p>编辑svg图标，将所有的 &lt;code>#2c3e50&lt;/code> 都替换成 currentColor，也就是使用样式设置的颜色。&lt;/p>
+&lt;p>存档图标：memo3/记录/&lt;/p>
+&lt;h3 id="友链使用方式">友链使用方式
+&lt;/h3>&lt;p>网络上方式：友链头像放在&lt;code>/assets/link-img&lt;/code>，友链数据放在&lt;code>/data/links.json&lt;/code>&lt;/p>
+&lt;p>自己的方式：&lt;code>content/page/links/index.md&lt;/code>，图片存储在同目录下，按照参考模式进行修改。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"> - title: 火烧云分析与记录
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> description: 火烧云🌇超级好用的查询，虽然目前还没有赶上一次世纪大烧
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> website: https://sunsetbot.top/?continueFlag=a07c9c28f354a5d4395ec520fb73ffbf
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> image: 火烧云.png
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="首页欢迎抖动效果">首页欢迎+抖动效果
+&lt;/h3>&lt;p>&lt;strong>位置&lt;/strong>&lt;code>/layouts/index.html&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">&lt;span class="c">&amp;lt;!-- 首页欢迎字幅 --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">div&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;welcome&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">p&lt;/span> &lt;span class="na">style&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;font-size: 2rem; text-align: center; font-weight: bold&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">span&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;shake&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span> 👋 &lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">span&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">span&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;jump-text1&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;&lt;/span> Welcome&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">span&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">span&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;jump-text2&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span> To &lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">span&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">span&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;jump-text3&amp;#34;&lt;/span> &lt;span class="na">style&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;color:#b1ce9d&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>de&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">span&lt;/span>&lt;span class="p">&amp;gt;&amp;lt;&lt;/span>&lt;span class="nt">span&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;jump-text4&amp;#34;&lt;/span> &lt;span class="na">style&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;color:#e99312&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&amp;lt;/&lt;/span>&lt;span class="nt">span&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;gt;&amp;lt;&lt;/span>&lt;span class="nt">span&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;jump-text5&amp;#34;&lt;/span> &lt;span class="na">style&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;color:#b1ce9d&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>de&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">span&lt;/span>&lt;span class="p">&amp;gt;&amp;lt;&lt;/span>&lt;span class="nt">span&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;jump-text6&amp;#34;&lt;/span> &lt;span class="na">style&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;color:#e99312&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&amp;lt;/&lt;/span>&lt;span class="nt">span&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;gt;&amp;lt;&lt;/span>&lt;span class="nt">span&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;jump-text7&amp;#34;&lt;/span> &lt;span class="na">style&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;color:#b1ce9d&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>duud&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">span&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">span&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;jump-text8&amp;#34;&lt;/span> &lt;span class="na">style&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;color:#b1ce9d&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>&amp;#39;s&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">span&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">span&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;jump-text9&amp;#34;&lt;/span> &lt;span class="na">style&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;color:#b1ce9d&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>Blog&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">span&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">p&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="修改全站字体">修改全站字体
+&lt;/h3>&lt;p>&lt;strong>位置&lt;/strong>&lt;code>layouts/partials/head/custom.html&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">style&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">:&lt;/span>&lt;span class="nd">root&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">--article-font-family&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Noto Serif SC&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nf">var&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="n">base&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">font&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">family&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">style&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">script&lt;/span>&lt;span class="p">&amp;gt;&lt;/span> &lt;span class="c1">// 正文自重300，标题字重700
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kd">function&lt;/span> &lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kr">const&lt;/span> &lt;span class="nx">customFont&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">document&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">createElement&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;link&amp;#39;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">customFont&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">href&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&amp;amp;display=swap&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">customFont&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">type&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;text/css&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">customFont&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">rel&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;stylesheet&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">document&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">head&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">appendChild&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">customFont&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}());&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">script&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="修改站点的图标">修改站点的图标
+&lt;/h3>&lt;p>选择想要的图片转换为ico，在config.yaml中的文件中，配置如下内容
+&lt;a class="link" href="https://convertio.co/zh/ico-converter/" target="_blank" rel="noopener"
+>ICO转换器&lt;/a>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">params&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">mainSections&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">post&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">featuredImageField&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">image&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">rssFullContent&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">favicon&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">/img/1.ico&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="修改博客背景颜色">修改博客背景颜色
+&lt;/h3>&lt;p>&lt;strong>位置&lt;/strong>：assets\scss\variables.scss&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-scss" data-lang="scss">&lt;span class="line">&lt;span class="cl">    &lt;span class="na">--body-background&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="mh">#f4f9fb&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="头像旋转">头像旋转
+&lt;/h3>&lt;p>位置在&lt;code>/assets/scss/custom.scss&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-scss" data-lang="scss">&lt;span class="line">&lt;span class="cl">&lt;span class="nc">.sidebar&lt;/span> &lt;span class="nt">header&lt;/span> &lt;span class="nc">.site-avatar&lt;/span> &lt;span class="nc">.site-logo&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">transition&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="ni">transform&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="mf">.65&lt;/span>&lt;span class="kt">s&lt;/span> &lt;span class="ni">ease-in-out&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="c1">// 旋转时间
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nc">.sidebar&lt;/span> &lt;span class="nt">header&lt;/span> &lt;span class="nc">.site-avatar&lt;/span> &lt;span class="nc">.site-logo&lt;/span>&lt;span class="nd">:hover&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">transform&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nf">rotate&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">360&lt;/span>&lt;span class="kt">deg&lt;/span>&lt;span class="p">);&lt;/span> &lt;span class="c1">// 旋转角度为360度
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="行内代码颜色">行内代码颜色
+&lt;/h3>&lt;p>#e96900
+位置：&lt;code>assets/scss/custom.scss&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-scss" data-lang="scss">&lt;span class="line">&lt;span class="cl">&lt;span class="cm">/* 行内代码颜色 */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nd">:root&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// 行内代码背景色
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="na">--code-background-color&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="mh">#f8f8f8&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// 行内代码前景色
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="na">--code-text-color&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="mh">#e96900&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="参考linshow的一些修改内容">参考linshow的一些修改内容
+&lt;/h3>&lt;p>&lt;code> ~\blog\assets\scss\custom.scss&lt;/code>&lt;/p>
+&lt;p>&lt;a class="link" href="https://blog.linsnow.cn/p/modify-hugo/" target="_blank" rel="noopener"
+>linsnow（3）Stack主题的自定义&lt;/a>&lt;/p>
+&lt;h3 id="反面教材">反面教材
+&lt;/h3>&lt;ul>
+&lt;li>在这个下面修改了字体，但是修改字体内容只有一部分内容。特别特别的丑&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-scss" data-lang="scss">&lt;span class="line">&lt;span class="cl">&lt;span class="k">@font-face&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">  &lt;span class="na">font-family&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="n">SmileySans&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="cm">/* 名称自定义 */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">  &lt;span class="na">src&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="sx">url(&amp;#39;/fonts/寒蝉手拙体_猫啃网.ttf&amp;#39;)&lt;/span> &lt;span class="nf">format&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;truetype&amp;#39;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">  &lt;span class="cm">/* 建议采用woff2格式，以降低容量大小，提高加载速度 */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nt">body&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">  &lt;span class="na">font-family&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="n">SmileySans&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//怎么设置所有文章都是这样子的呢？？现在这样子也太丑了吧？？
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>外部链接显示小小图标，无需锦上添花&lt;/li>
+&lt;/ul>
+&lt;h2 id="240808">🌍240808
+&lt;/h2>&lt;h3 id="魔改ing">魔改ing
+&lt;/h3>&lt;p>.ico是 小小小小小的图标
+&lt;a class="link" href="https://blog.csdn.net/2201_75288929/article/details/132507563" target="_blank" rel="noopener"
+>【Hugo】Stack主题的使用记录_hugo stack-CSDN博客&lt;/a> 讲的非常详细，从0到1的跨越，一些小细节也涉及到了。
+&lt;a class="link" href="https://blog.linsnow.cn/p/modify-hugo/" target="_blank" rel="noopener"
+>（3）Stack主题的自定义&lt;/a> 圆角的可爱的&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.jianshu.com/p/f5377332487c" target="_blank" rel="noopener"
+>介绍一款Hugo主题皮肤stack的魔改版主题 - 简书&lt;/a>&lt;/p>
+&lt;p>颜色：&lt;/p>
+&lt;p>&lt;img src="https://blog.dededuud.cn/Pasted%20image%2020240802170820.png"
+loading="lazy"
+>&lt;/p>
+&lt;h3 id="参考链接">参考链接
+&lt;/h3>&lt;p>【学习向】
+&lt;a class="link" href="https://blog.gimo.me/posts/generating-cover-images-for-hugo-blog-posts/" target="_blank" rel="noopener"
+>给 Hugo 博客文章自动生成分享图 | Yuanji&amp;rsquo;s Blog&lt;/a>
+&lt;a class="link" href="https://thirdshire.com/hugo-stack-renovation/#%E7%BC%A9%E5%B0%8F%E4%BB%A3%E7%A0%81%E5%9D%97%E7%9A%84%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F" target="_blank" rel="noopener"
+>Hugo Stack主题装修笔记&lt;/a>
+&lt;a class="link" href="https://hyrtee.github.io/2023/start-blog/#%E5%AF%BC%E5%85%A5busuanzi-js%E8%84%9A%E6%9C%AC" target="_blank" rel="noopener"
+>hugo+Stack 搭建个人博客&lt;/a>&lt;/p>
+&lt;p>【欣赏向】
+简约美 &lt;a class="link" href="https://io-oi.me/life/" target="_blank" rel="noopener"
+>Life | reuixiy&lt;/a>
+很有趣，小表情很多，mac小表情：&lt;a class="link" href="https://blog.linsnow.cn/" target="_blank" rel="noopener"
+>L1nSn0w&amp;rsquo;s Blog&lt;/a>&lt;/p></description></item><item><title>搭建个人博客记录1️⃣🎉🎉🎉hugo+obsidian</title><link>https://blog.dededuud.cn/p/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%951%EF%B8%8F%E2%83%A3hugo-obsidian/</link><pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate><guid>https://blog.dededuud.cn/p/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%951%EF%B8%8F%E2%83%A3hugo-obsidian/</guid><description>&lt;img src="https://blog.dededuud.cn/df4eee97ec03a2719dbd4de478e4aca.jpg" alt="Featured image of post 搭建个人博客记录1️⃣🎉🎉🎉hugo+obsidian" />&lt;p>&lt;img src="https://blog.dededuud.cn/df4eee97ec03a2719dbd4de478e4aca.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="起步">起步
 &lt;/h2>&lt;p>搭建博客在很早很早以前都写在便签备忘录里面，但是总是没有动手开始做，一次又一次搁浅直到上一周看到一篇设计师姐妹搭建作品集艺术向的博客，非常心动。于是就有这个&lt;code>dededuud'blog&lt;/code>啦！&lt;/p>
 &lt;p>【平台选择】&lt;/p>
 &lt;p>依旧延续自己举棋不定的风格，有“搭建博客”这个想法后第一步是全平台狂搜：搭建博客的平台选择；WordPress优缺点；Hugo优缺点；Hexo优缺点；相关主题的美观程度；友邻博客的浏览……&lt;/p>
@@ -8,7 +276,7 @@
 &lt;li>相对主题好看，不需要太冗杂，搭建后我这个懒蛋过了这个时期后其实不太会探索更多内容。&lt;/li>
 &lt;li>稳定，不想再重复搭建TAT&lt;/li>
 &lt;/ol>
-&lt;p>基于这几点，综合来看选择了&lt;code>hugo&lt;/code>。下面是自己的搭建过程，注意：没有详细的操作内容，可以点进去参考链接查看具体内容，大部分是个人向配置记录与报错解决。看起来我真的很多错误处理&lt;/p>
+&lt;p>基于这几点，综合来看选择了&lt;code>hugo&lt;/code>。下面是自己的搭建过程，没有详细的操作内容，可以点进去参考链接查看具体内容，大部分是个人向配置记录与报错解决。看起来我真的很多错误处理&lt;/p>
 &lt;h2 id="hugo搭建">hugo搭建
 &lt;/h2>&lt;p>主参考教程如下：&lt;/p>
 &lt;h3 id="参考链接">参考链接
@@ -127,6 +395,23 @@
 &lt;li>自动化上传github，使用deploy.sh 文件（通过 git bash），自动上传加载。&lt;/li>
 &lt;li>双击打开运行&lt;code>deploy.sh&lt;/code>即可自动推送文件到仓库,以后写完博客或修改博客后都需要运行一下&lt;code>deploy.sh&lt;/code>,才能部署到云&lt;/li>
 &lt;/ol>
+&lt;h3 id="域名解析">域名解析
+&lt;/h3>&lt;p>从7月底申请，到8月12号才正式通过域名备案。&lt;/p>
+&lt;h3 id="二级域名设置">二级域名设置
+&lt;/h3>&lt;p>尝试30min发现这么简单的事情却一直失败，原因是：我的二级域名 blog 输成了 bolg&lt;/p>
+&lt;p>memos&lt;/p>
+&lt;p>Photography&lt;/p>
+&lt;p>&lt;a class="link" href="https://blog.csdn.net/weixin_62392149/article/details/135114752" target="_blank" rel="noopener"
+>利用阿里云CDN加速vercel上的网站—2023最新可用-CSDN博客&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://zhuanlan.zhihu.com/p/621179830" target="_blank" rel="noopener"
+>zhuanlan.zhihu.com/p/621179830&lt;/a>&lt;/p>
+&lt;p>&lt;code>vercel Generating SSL Certificate&lt;/code> 配置后需要等待一下子，ssl证书生成后，就可以访问啦&lt;/p>
+&lt;p>Good news! Your DNS records are set up correctly, but it can take some time for them to propagate globally.&lt;/p>
+&lt;h3 id="ssl配置">SSL配置
+&lt;/h3>&lt;p>&lt;a class="link" href="http://www.360doc.com/content/24/0520/17/360939_1123836588.shtml" target="_blank" rel="noopener"
+>【一分钟】轻松搞定，SSL证书自动续签，解决阿里云SSL免费证书每3个月失效问题&lt;/a>
+&lt;a class="link" href="https://blog.csdn.net/weixin_43288858/article/details/118437535" target="_blank" rel="noopener"
+>阿里云申请域名及域名配置https_阿里云单域名配置一个ip多个端口怎么设置-CSDN博客&lt;/a>&lt;/p>
 &lt;h3 id="错误一览">错误一览
 &lt;/h3>&lt;h4 id="除了主页外其他页面的头像无法正常显示">除了主页外，其他页面的头像无法正常显示
 &lt;/h4>&lt;p>呜呜呜太感动了，太感动了，居然搜索到同款疑问了，真的困扰我很久。&lt;/p>
@@ -151,7 +436,7 @@
 >Hugo 博客写作最佳实践 | 胡说&lt;/a>&lt;/p>
 &lt;p>以上文章链接均是出自于一个作者的系列文章，整体看下来受益匪浅。
 目前自己obsidian的看板如下（还没有过多美化），按钮只有&lt;code>新建博客&lt;/code>一项，可以自动新建一篇固定模版的md文件到/content/post/路径下，可以根据勾选项draft，选择是否发布（超级爽）
-&lt;img src="https://dedeblog-file2.vercel.app/Pasted%20image%2020240802154512.png"
+&lt;img src="https://blog.dededuud.cn/Pasted%20image%2020240802154512.png"
 loading="lazy"
 >&lt;/p>
 &lt;h3 id="已有插件">已有插件
@@ -189,7 +474,7 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>注意一点：stack模版中！存储文章的地方是&lt;code>post&lt;/code>而不是&lt;code>posts&lt;/code>!!!有部分错误的原因来源于此。&lt;/p>
 &lt;h4 id="博客中一级与二级目录一致无区分">博客中一级与二级目录一致，无区分
 &lt;/h4>&lt;p>取消一级目录，文章直接从二级目录开始写起
-&lt;img src="https://dedeblog-file2.vercel.app/Pasted%20image%2020240802162214.png"
+&lt;img src="https://blog.dededuud.cn/Pasted%20image%2020240802162214.png"
 loading="lazy"
 >&lt;/p>
 &lt;h4 id="dateview识别不出来前缀">dateview识别不出来前缀
@@ -260,19 +545,4 @@ I am having the same issue, even though the vault opened is cloned from my repo.
 >Node.js安装及环境配置（超详细！保姆级！！）_nodejs安装及环境配置-CSDN博客&lt;/a>&lt;/p>
 &lt;p>发现是网络问题，配置镜像网站&lt;/p>
 &lt;h3 id="obsidian-picgo上传图床失败">obsidian picgo上传图床失败
-&lt;/h3>&lt;p>设置完图床点击 设为默认图床&lt;/p>
-&lt;h2 id="魔改ing">魔改ing
-&lt;/h2>&lt;p>.ico是 小小小小小的图标
-&lt;a class="link" href="https://blog.csdn.net/2201_75288929/article/details/132507563" target="_blank" rel="noopener"
->【Hugo】Stack主题的使用记录_hugo stack-CSDN博客&lt;/a> 讲的非常详细，从0到1的跨越，一些小细节也涉及到了。
-&lt;a class="link" href="https://blog.linsnow.cn/p/modify-hugo/" target="_blank" rel="noopener"
->（3）Stack主题的自定义&lt;/a> 圆角的可爱的&lt;/p>
-&lt;h3 id="参考链接-1">参考链接
-&lt;/h3>&lt;p>【学习向】
-&lt;a class="link" href="https://blog.gimo.me/posts/generating-cover-images-for-hugo-blog-posts/" target="_blank" rel="noopener"
->给 Hugo 博客文章自动生成分享图 | Yuanji&amp;rsquo;s Blog&lt;/a>&lt;/p>
-&lt;p>【欣赏向】
-简约美 &lt;a class="link" href="https://io-oi.me/life/" target="_blank" rel="noopener"
->Life | reuixiy&lt;/a>
-很有趣，小表情很多，mac小表情：&lt;a class="link" href="https://blog.linsnow.cn/" target="_blank" rel="noopener"
->L1nSn0w&amp;rsquo;s Blog&lt;/a>&lt;/p></description></item></channel></rss>
+&lt;/h3>&lt;p>设置完图床点击 设为默认图床&lt;/p></description></item></channel></rss>
