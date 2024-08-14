@@ -1,9 +1,37 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on dede's Blog</title><link>https://blog.dededuud.cn/tags/hugo/</link><description>Recent content in Hugo on dede's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>dededuud</copyright><lastBuildDate>Mon, 12 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.dededuud.cn/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>搭建个人博客记录2️⃣博客美化</title><link>https://blog.dededuud.cn/p/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%952%EF%B8%8F%E2%83%A3%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/</link><pubDate>Mon, 12 Aug 2024 00:00:00 +0000</pubDate><guid>https://blog.dededuud.cn/p/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%952%EF%B8%8F%E2%83%A3%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/</guid><description>&lt;img src="https://blog.dededuud.cn/Pasted%20image%2020240812145355.png" alt="Featured image of post 搭建个人博客记录2️⃣博客美化" />&lt;p>部分修改内容的时候，需要搜索stack主题下的内容。因为不同主题stack下面的文件是不同的。&lt;/p>
-&lt;h2 id="-240813">🌍 240813
-&lt;/h2>&lt;h3 id="照片集页面的搭建">照片集页面的搭建
+&lt;h3 id="照片集页面的搭建">照片集页面的搭建
 &lt;/h3>&lt;p>&lt;a class="link" href="https://themes.gohugo.io/themes/hugo-theme-gallery/" target="_blank" rel="noopener"
 >hugo-theme-gallery主题&lt;/a>&lt;/p>
-&lt;h3 id="缩小代码块字体">缩小代码块字体
+&lt;h2 id="-240814">🌍 240814
+&lt;/h2>&lt;h3 id="让百度搜索到我">让百度搜索到我
+&lt;/h3>&lt;p>&lt;a class="link" href="https://hyrtee.github.io/2023/start-blog/#%E5%AF%BC%E5%85%A5busuanzi-js%E8%84%9A%E6%9C%AC" target="_blank" rel="noopener"
+>Site Unreachable&lt;/a>&lt;/p>
+&lt;h3 id="代码块增加一键复制">代码块增加一键复制
+&lt;/h3>&lt;p>参考代码：&lt;a class="link" href="https://huangzhongde.cn/post/2020-02-21-hugo-code-copy-to-clipboard/" target="_blank" rel="noopener"
+>Hugo插件之代码块拷贝插件 | 黄忠德的博客&lt;/a>&lt;/p>
+&lt;h3 id="代码块增加行数">代码块增加行数
+&lt;/h3>&lt;p>&lt;del>放弃了！❌&lt;/del>
+stack主题有相应的内容，只需要修改配置文件&lt;code>config.yaml&lt;/code>就可以实现了。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">markup&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">goldmark&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">renderer&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="c">## Set to true if you have HTML content inside Markdown&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">unsafe&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">tableOfContents&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">endLevel&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">5&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c">## 最大标题层级&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">ordered&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">startLevel&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">2&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">highlight&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">noClasses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">false&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">codeFences&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">guessSyntax&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">lineNoStart&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">1&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">lineNos&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">lineNumbersInTable&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">false&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">tabWidth&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">4&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>使用过程中发现个问题，行号是正常显示出来了，但是使用复制功能的时候，会连行号一起复制，这时修改自定义的css配置&lt;/p>
+&lt;h2 id="-240813">🌍 240813
+&lt;/h2>&lt;h3 id="缩小代码块字体">缩小代码块字体
 &lt;/h3>&lt;p>默认的代码字体在移动端显示有点大了。在&lt;code>assets/scss/partials/article.scss&lt;/code>内加上&lt;code>font-size&lt;/code>设定：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-scss" data-lang="scss">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">code&lt;/span> &lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">border-radius&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nf">var&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="n">tag-border-radius&lt;/span>&lt;span class="p">);&lt;/span>
